@@ -1,8 +1,12 @@
-#include <iostream>
+#include "StateManager.hpp"
+#include "PlayState.hpp"
 
 int main()
 {
-	std::cout << "Hello World";
+	StateManager manager;
+
+	manager.pushState(new PlayState(&manager));
+	manager.gameLoop();
 
 	return 0;
 }
