@@ -4,9 +4,8 @@
 
 StateManager::StateManager()
 {
-	this->window.create(sf::VideoMode(1200, 1200), "Exodus");
+	this->window.create(sf::VideoMode(1200, 1200, 32), "Exodus", sf::Style::Fullscreen);
 	this->window.setFramerateLimit(60);
-
 }
 
 StateManager::~StateManager()
